@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // database connection
-mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.DBURI)
     // if connected
     .then(() => {
         const port = process.env.PORT;
